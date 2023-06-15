@@ -13,17 +13,19 @@ function partition(arr: number[], lo: number, hi: number): number {
 
     for (let i = lo; i < hi; i++) {
         if (arr[i] <= pivot) {
-            idx++;
+            ++idx;
             const temp = arr[i];
             arr[i] = arr[idx];
             arr[idx] = temp;
         }
     }
-    idx++;
+    ++idx;
     arr[hi] = arr[idx];
     arr[idx] = pivot;
 
     return idx;
 }
 
-export default function quick_sort(arr: number[]): void {}
+export default function quick_sort(arr: number[]): void {
+    qs(arr, 0, arr.length - 1);
+}
