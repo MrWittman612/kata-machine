@@ -1,5 +1,6 @@
 function qs(arr: number[], lo: number, hi: number): void {
     if (lo > hi) return;
+
     const pivotIdx = partition(arr, lo, hi);
 
     qs(arr, lo, pivotIdx - 1);
