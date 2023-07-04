@@ -1,3 +1,10 @@
+/*
+ * Big O time Complexity
+ * log(n): Best case
+ * log(n^2): Worst and Average case
+ *
+ */
+
 export default function bubble_sort(arr: number[]): void {
     for (let i = 0; i < arr.length; ++i) {
         for (let j = 0; j < arr.length - 1 - i; ++j) {
